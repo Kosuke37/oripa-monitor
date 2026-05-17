@@ -1,20 +1,22 @@
 """
-Japan Toreca オリパ 売り切れ通知システム(ID単位追跡版)
+Japan Toreca オリパ 売り切れ通知システム(ID単位追跡版 + 静粛時間帯対応)
 
 監視対象は watches.json で設定します。
 
 【追跡単位】
 ガチャの個別ID。新しいガチャが同じ価格に登場しても、別物として扱う。
-「あったガチャ(id=X)が消えた」をピンポイントで検知して通知。
 
 【誤検知対策】
 1. ガチャカードが描画されるまで待つ
 2. ガチャ0件の取得は失敗とみなしてスキップ
 3. miss_threshold 回連続で見つからなかったら通知
 
+【静粛時間帯】
+JST の指定時間帯は、検知しても LINE通知を送らない(状態だけ更新)。
+GitHub Actionsの遅延で深夜に動いても通知が来ないように。
+
 【通知】
 複数の通知は1通にまとめて送信
-タイトル中心で表示(idは参考)
 """
 
 from __future__ import annotations
@@ -37,7 +39,13 @@ DEFAULT_CONFIG = {
         {"label": "ワンピース", "url": "https://japan-toreca.com/oripa/onepiece", "prices": [933]},
         {"label": "ホビー", "url": "https://japan-toreca.com/oripa/hobby", "prices": [1020, 1030, 1040]},
     ],
-    "options": {"notify_on_new": False, "stale_days": 14, "miss_threshold": 1},
+    "options": {
+        "notify_on_new": False,
+        "stale_days": 14,
+        "miss_threshold": 1,
+        "quiet_hours_jst_start": 2,
+        "quiet_hours_jst_end": 7,
+    },
 }
 
 
@@ -63,9 +71,14 @@ def load_config() -> dict:
 
 _CFG = load_config()
 WATCHES = _CFG["watches"]
-NOTIFY_ON_NEW = _CFG.get("options", {}).get("notify_on_new", False)
-STALE_DAYS = _CFG.get("options", {}).get("stale_days", 14)
-MISS_THRESHOLD = _CFG.get("options", {}).get("miss_threshold", 1)
+_OPTS = _CFG.get("options", {})
+NOTIFY_ON_NEW = _OPTS.get("notify_on_new", False)
+STALE_DAYS = _OPTS.get("stale_days", 14)
+MISS_THRESHOLD = _OPTS.get("miss_threshold", 1)
+QUIET_START_HOUR = _OPTS.get("quiet_hours_jst_start", 2)
+QUIET_END_HOUR = _OPTS.get("quiet_hours_jst_end", 7)
+
+JST = timezone(timedelta(hours=9))
 
 STATE_FILE = Path("state.json")
 DEBUG_HTML_DIR = Path("debug")
@@ -78,6 +91,18 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/126.0.0.0 Safari/537.36"
 )
+
+
+def is_quiet_hours_jst() -> bool:
+    """現在のJSTが静粛時間帯か判定。"""
+    if QUIET_START_HOUR == QUIET_END_HOUR:
+        return False  # 設定なし
+    hour = datetime.now(JST).hour
+    if QUIET_START_HOUR < QUIET_END_HOUR:
+        return QUIET_START_HOUR <= hour < QUIET_END_HOUR
+    else:
+        # 日跨ぎ(例: 22→7)対応
+        return hour >= QUIET_START_HOUR or hour < QUIET_END_HOUR
 
 
 def fetch_html(url: str) -> str:
@@ -233,7 +258,6 @@ def process_watch(watch: dict, now_iso: str, state: dict,
     notifications: list[str] = []
     current_keys = {g["key"] for g in target_gachas}
 
-    # 一覧にいるガチャを処理
     for g in target_gachas:
         key = g["key"]
         if key in tracked:
@@ -263,7 +287,6 @@ def process_watch(watch: dict, now_iso: str, state: dict,
             else:
                 print(f"[INFO] 新規記録(通知なし): {key} {g['title'][:40]}")
 
-    # 一覧から消えたガチャを処理
     for key, prev in list(tracked.items()):
         if prev.get("watch_label") != label:
             continue
@@ -337,11 +360,13 @@ def main() -> int:
         return 0
 
     now_iso = datetime.now(timezone.utc).isoformat()
-    print(f"[INFO] 実行時刻: {now_iso}")
+    now_jst = datetime.now(JST).strftime("%H:%M")
+    quiet = is_quiet_hours_jst()
+    print(f"[INFO] 実行時刻: {now_iso} (JST {now_jst})")
     print(f"[INFO] 監視数: {len(WATCHES)}, NOTIFY_ON_NEW={NOTIFY_ON_NEW}, MISS_THRESHOLD={MISS_THRESHOLD} (ID単位追跡)")
+    print(f"[INFO] 静粛時間帯: JST {QUIET_START_HOUR}:00-{QUIET_END_HOUR}:00 / 現在は{'静粛中' if quiet else '通知可'}")
 
     state = load_state()
-    # 前バージョンの price-based state を引きずってる場合、初回扱いにする
     if "tracked_prices" in state and "tracked_gachas" not in state:
         state.pop("tracked_prices", None)
         state["tracked_gachas"] = {}
@@ -370,6 +395,12 @@ def main() -> int:
         return 0
 
     save_state(state)
+
+    # 静粛時間帯チェック: 検知しても通知は送らない(状態だけ更新)
+    if quiet and all_notifications:
+        print(f"\n[INFO] 静粛時間帯のため、{len(all_notifications)}件の通知を送信せずに破棄します")
+        return 0
+
     send_combined(all_notifications, now_iso)
     print(f"\n[INFO] 処理完了(通知対象 {len(all_notifications)} 件)")
     return 0
