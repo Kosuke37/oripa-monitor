@@ -311,13 +311,9 @@ def process_watch(watch: dict, now_iso: str, state: dict,
             prev["price"] = g["price"]
             prev["disappeared_at"] = None
 
-            if is_sold_out_now and not was_sold_out and not is_first_run:
-                prev["is_sold_out"] = True
-                prev["sold_out_at"] = now_iso
-                notifications.append(format_sold_out(prev, "stock_zero", label, url, now_iso))
-                print(f"[NOTIFY] 売り切れ: {key} {g['title'][:40]}")
-            else:
-                prev["is_sold_out"] = is_sold_out_now
+# 一覧にいる間は「売り切れ」とみなさない(消失検知のみ使用)
+            prev["is_sold_out"] = False
+        
         else:
             # 新規ガチャ
             entry = {
