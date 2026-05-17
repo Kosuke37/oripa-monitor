@@ -19,7 +19,7 @@
     "notify_on_new": false,
 
     "_comment_stale_days": "消えてから何日経ったエントリを削除するか",
-    "stale_days": 14
+    "stale_days": 14,
     "miss_threshold": 1
   }
 }
