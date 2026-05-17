@@ -9,9 +9,9 @@
       "last_seen": "2026-05-17T12:31:15.777171+00:00",
       "last_remaining": 100,
       "last_total": 100,
-      "is_sold_out": false,
-      "sold_out_at": null,
-      "disappeared_at": null,
+      "is_sold_out": true,
+      "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
       "watch_label": "ワンピース"
     },
     "hobby:64556": {
@@ -23,9 +23,9 @@
       "last_seen": "2026-05-17T12:31:15.777171+00:00",
       "last_remaining": 50,
       "last_total": 100,
-      "is_sold_out": false,
-      "sold_out_at": null,
-      "disappeared_at": null,
+      "is_sold_out": true,
+      "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
       "watch_label": "ホビー"
     },
     "hobby:64553": {
@@ -37,9 +37,9 @@
       "last_seen": "2026-05-17T12:31:15.777171+00:00",
       "last_remaining": 52,
       "last_total": 100,
-      "is_sold_out": false,
-      "sold_out_at": null,
-      "disappeared_at": null,
+      "is_sold_out": true,
+      "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
       "watch_label": "ホビー"
     },
     "hobby:64524": {
@@ -51,12 +51,12 @@
       "last_seen": "2026-05-17T12:31:15.777171+00:00",
       "last_remaining": 65,
       "last_total": 100,
-      "is_sold_out": false,
-      "sold_out_at": null,
-      "disappeared_at": null,
+      "is_sold_out": true,
+      "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-05-17T12:31:15.777171+00:00"
+  "last_check": "2026-05-17T12:36:22.098279+00:00"
 }
