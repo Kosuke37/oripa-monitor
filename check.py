@@ -1,16 +1,20 @@
 """
-Japan Toreca オリパ 売り切れ通知システム
+Japan Toreca オリパ 売り切れ通知システム(ID単位追跡版)
 
 監視対象は watches.json で設定します。
-このファイル(check.py)を編集する必要はありません。
+
+【追跡単位】
+ガチャの個別ID。新しいガチャが同じ価格に登場しても、別物として扱う。
+「あったガチャ(id=X)が消えた」をピンポイントで検知して通知。
 
 【誤検知対策】
 1. ガチャカードが描画されるまで待つ
 2. ガチャ0件の取得は失敗とみなしてスキップ
-3. 2回連続で見つからなかったら売り切れと判定(瞬間ミス許容)
+3. miss_threshold 回連続で見つからなかったら通知
 
 【通知】
-複数の通知は1通にまとめて送信(LINE通数節約 + 見やすさ向上)
+複数の通知は1通にまとめて送信
+タイトル中心で表示(idは参考)
 """
 
 from __future__ import annotations
@@ -33,7 +37,7 @@ DEFAULT_CONFIG = {
         {"label": "ワンピース", "url": "https://japan-toreca.com/oripa/onepiece", "prices": [933]},
         {"label": "ホビー", "url": "https://japan-toreca.com/oripa/hobby", "prices": [1020, 1030, 1040]},
     ],
-    "options": {"notify_on_new": False, "stale_days": 14, "miss_threshold": 2},
+    "options": {"notify_on_new": False, "stale_days": 14, "miss_threshold": 1},
 }
 
 
@@ -47,18 +51,13 @@ def load_config() -> dict:
     except json.JSONDecodeError as e:
         print(f"[ERROR] {CONFIG_FILE} のJSON構文エラー: {e}")
         return DEFAULT_CONFIG
-
     if "watches" not in cfg or not isinstance(cfg["watches"], list):
-        print(f"[ERROR] {CONFIG_FILE} に 'watches' (配列) がありません。")
         return DEFAULT_CONFIG
     for i, w in enumerate(cfg["watches"]):
         if not all(k in w for k in ("label", "url", "prices")):
-            print(f"[ERROR] watches[{i}] に必須キー (label/url/prices) が不足。")
             return DEFAULT_CONFIG
         if not isinstance(w["prices"], list) or not all(isinstance(p, int) for p in w["prices"]):
-            print(f"[ERROR] watches[{i}].prices は整数の配列で指定してください。")
             return DEFAULT_CONFIG
-
     return cfg
 
 
@@ -66,7 +65,7 @@ _CFG = load_config()
 WATCHES = _CFG["watches"]
 NOTIFY_ON_NEW = _CFG.get("options", {}).get("notify_on_new", False)
 STALE_DAYS = _CFG.get("options", {}).get("stale_days", 14)
-MISS_THRESHOLD = _CFG.get("options", {}).get("miss_threshold", 2)
+MISS_THRESHOLD = _CFG.get("options", {}).get("miss_threshold", 1)
 
 STATE_FILE = Path("state.json")
 DEBUG_HTML_DIR = Path("debug")
@@ -179,25 +178,25 @@ def send_line(text: str) -> None:
     print("[INFO] LINE通知送信完了")
 
 
-def format_sold_out(prev: dict, watch_label: str, watch_url: str, now_iso: str) -> str:
+def format_sold_out(prev: dict, watch_label: str, watch_url: str) -> str:
     title = prev.get("title") or "(タイトル不明)"
-    gid = prev.get("id", "?")
     price = prev.get("price", "?")
     total = prev.get("last_total")
     remaining = prev.get("last_remaining")
     miss_count = prev.get("miss_count", 1)
     return (
         f"🎴 [{watch_label}] {price}コイン/1回 売り切れ\n"
-        f"「{title}」(id={gid})\n"
-        f"一覧から消失(直前: 残り{remaining}/{total}、{miss_count}回連続未検出)\n"
+        f"「{title}」\n"
+        f"直前: 残り{remaining}/{total}\n"
+        f"({miss_count}回連続未検出)\n"
         f"{watch_url}"
     )
 
 
-def format_new(g: dict, watch_label: str, now_iso: str) -> str:
+def format_new(g: dict, watch_label: str) -> str:
     return (
         f"🆕 [{watch_label}] {g['price']}コイン/1回 新規出品\n"
-        f"「{g['title'] or '(タイトル不明)'}」(id={g['id']})\n"
+        f"「{g['title'] or '(タイトル不明)'}」\n"
         f"残り {g['remaining']}/{g['total']}\n"
         f"https://japan-toreca.com/oripa/{g['category']}/{g['id']}"
     )
@@ -221,7 +220,7 @@ def process_watch(watch: dict, now_iso: str, state: dict,
     all_gachas = parse_gachas(html, expected_category=expected_cat)
 
     if len(all_gachas) == 0:
-        print(f"[WARN] {label}: ガチャ0件 → ページ取得失敗の可能性、スキップ")
+        print(f"[WARN] {label}: ガチャ0件 → スキップ")
         return []
 
     target_gachas = filter_target_price(all_gachas, target_prices)
@@ -234,6 +233,7 @@ def process_watch(watch: dict, now_iso: str, state: dict,
     notifications: list[str] = []
     current_keys = {g["key"] for g in target_gachas}
 
+    # 一覧にいるガチャを処理
     for g in target_gachas:
         key = g["key"]
         if key in tracked:
@@ -258,11 +258,12 @@ def process_watch(watch: dict, now_iso: str, state: dict,
             }
             tracked[key] = entry
             if NOTIFY_ON_NEW and not is_first_run:
-                notifications.append(format_new(g, label, now_iso))
+                notifications.append(format_new(g, label))
                 print(f"[NOTIFY] 新規出品: {key} {g['title'][:40]}")
             else:
                 print(f"[INFO] 新規記録(通知なし): {key} {g['title'][:40]}")
 
+    # 一覧から消えたガチャを処理
     for key, prev in list(tracked.items()):
         if prev.get("watch_label") != label:
             continue
@@ -281,7 +282,7 @@ def process_watch(watch: dict, now_iso: str, state: dict,
             prev["is_sold_out"] = True
             prev["sold_out_at"] = now_iso
             prev["disappeared_at"] = now_iso
-            notifications.append(format_sold_out(prev, label, url, now_iso))
+            notifications.append(format_sold_out(prev, label, url))
             print(f"[NOTIFY] 売り切れ: {key} {prev.get('title', '')[:40]}")
         else:
             if not prev.get("disappeared_at"):
@@ -312,7 +313,6 @@ def cleanup_stale(state: dict) -> int:
 
 
 def send_combined(notifications: list[str], now_iso: str) -> None:
-    """複数の通知を1通にまとめてLINEに送信。"""
     if not notifications:
         return
     if len(notifications) == 1:
@@ -321,7 +321,6 @@ def send_combined(notifications: list[str], now_iso: str) -> None:
         return
     header = f"🔔 オリパ更新 {len(notifications)}件\n"
     body = header + "\n\n────────\n\n".join(notifications) + f"\n\n検知: {now_iso}"
-    # 5000文字制限の保険
     if len(body) > 4900:
         body = body[:4900] + "\n…(省略)"
     send_line(body)
@@ -339,9 +338,15 @@ def main() -> int:
 
     now_iso = datetime.now(timezone.utc).isoformat()
     print(f"[INFO] 実行時刻: {now_iso}")
-    print(f"[INFO] 監視数: {len(WATCHES)}, NOTIFY_ON_NEW={NOTIFY_ON_NEW}, MISS_THRESHOLD={MISS_THRESHOLD}")
+    print(f"[INFO] 監視数: {len(WATCHES)}, NOTIFY_ON_NEW={NOTIFY_ON_NEW}, MISS_THRESHOLD={MISS_THRESHOLD} (ID単位追跡)")
 
     state = load_state()
+    # 前バージョンの price-based state を引きずってる場合、初回扱いにする
+    if "tracked_prices" in state and "tracked_gachas" not in state:
+        state.pop("tracked_prices", None)
+        state["tracked_gachas"] = {}
+        state["first_run"] = True
+
     is_first_run = state.get("first_run", False)
 
     all_notifications: list[str] = []
