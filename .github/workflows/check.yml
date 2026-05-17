@@ -3,7 +3,7 @@ name: Check Oripa Sold Out
 on:
   schedule:
     # 5分ごとに実行 (GitHub Actionsの仕様上、実際は数分の遅延あり)
-    - cron: '*/5 * * * *'
+   - cron: '2,7,12,17,22,27,32,37,42,47,52,57 * * * *'
   workflow_dispatch:  # 手動実行も可
 
 permissions:
