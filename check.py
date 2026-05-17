@@ -118,7 +118,7 @@ def fetch_html(url: str) -> str:
 # ============================================================
 
 HREF_RE = re.compile(
-    r'^https?://japan-toreca\.com/oripa/(?P<cat>[\w-]+)/(?P<id>\d+)'
+    r'^(?:https?://japan-toreca\.com)?/oripa/(?P<cat>[\w-]+)/(?P<id>\d+)'
 )
 PRICE_RE = re.compile(r'(\d{1,3}(?:,\d{3})*|\d+)/1回')
 STOCK_RE = re.compile(r'残り([\d,]+)\s*/\s*([\d,]+)')
