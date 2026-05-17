@@ -6,12 +6,12 @@
       "price": 933,
       "title": "1/10プレミアムカードコレクション　ベストセレクション vol.4",
       "first_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_remaining": 100,
+      "last_seen": "2026-05-17T12:39:56.782343+00:00",
+      "last_remaining": 80,
       "last_total": 100,
-      "is_sold_out": true,
+      "is_sold_out": false,
       "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
-      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": null,
       "watch_label": "ワンピース"
     },
     "hobby:64556": {
@@ -20,12 +20,12 @@
       "price": 1040,
       "title": "一緒に暮らそう！ ぽこあポケモン",
       "first_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_remaining": 50,
+      "last_seen": "2026-05-17T12:39:56.782343+00:00",
+      "last_remaining": 43,
       "last_total": 100,
-      "is_sold_out": true,
+      "is_sold_out": false,
       "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
-      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": null,
       "watch_label": "ホビー"
     },
     "hobby:64553": {
@@ -34,12 +34,12 @@
       "price": 1030,
       "title": "みんなで楽しもう！ マリオテニスフィーバー",
       "first_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_remaining": 52,
+      "last_seen": "2026-05-17T12:39:56.782343+00:00",
+      "last_remaining": 47,
       "last_total": 100,
-      "is_sold_out": true,
+      "is_sold_out": false,
       "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
-      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": null,
       "watch_label": "ホビー"
     },
     "hobby:64524": {
@@ -48,15 +48,15 @@
       "price": 1020,
       "title": "遥かなる旅路　ゼルダの伝説ティアーズオブザキングダム",
       "first_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_seen": "2026-05-17T12:31:15.777171+00:00",
+      "last_seen": "2026-05-17T12:39:56.782343+00:00",
       "last_remaining": 65,
       "last_total": 100,
-      "is_sold_out": true,
+      "is_sold_out": false,
       "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
-      "disappeared_at": "2026-05-17T12:36:22.098279+00:00",
+      "disappeared_at": null,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-05-17T12:36:22.098279+00:00"
+  "last_check": "2026-05-17T12:39:56.782343+00:00"
 }
