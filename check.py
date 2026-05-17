@@ -96,16 +96,8 @@ HEADERS = {
 # ============================================================
 
 def fetch_html(url: str) -> str:
-    """通常のHTTP GETを試行。失敗時はPlaywrightにフォールバック。"""
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=30)
-        if r.status_code == 200 and len(r.text) > 10_000:
-            return r.text
-        print(f"[INFO] requests fallback: status={r.status_code} size={len(r.text)}")
-    except Exception as e:
-        print(f"[INFO] requests failed: {e}")
-
-    print("[INFO] Playwrightにフォールバック")
+    """Playwright(本物のChrome)で取得。requestsだとbot検出で空のHTMLになる。"""
+    print(f"[INFO] Playwrightで取得: {url}")
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -115,7 +107,7 @@ def fetch_html(url: str) -> str:
         )
         page = ctx.new_page()
         page.goto(url, wait_until="networkidle", timeout=60_000)
-        page.wait_for_timeout(2000)
+        page.wait_for_timeout(3000)
         html = page.content()
         browser.close()
         return html
