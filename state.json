@@ -9,11 +9,11 @@
       "last_seen": "2026-05-17T14:45:47.635961+00:00",
       "last_remaining": 54,
       "last_total": 100,
-      "is_sold_out": false,
-      "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
-      "disappeared_at": null,
+      "is_sold_out": true,
+      "sold_out_at": "2026-05-17T15:45:34.274920+00:00",
+      "disappeared_at": "2026-05-17T15:45:34.274920+00:00",
       "watch_label": "ワンピース",
-      "miss_count": 0
+      "miss_count": 1
     },
     "hobby:64556": {
       "category": "hobby",
@@ -28,7 +28,7 @@
       "sold_out_at": "2026-05-17T14:45:47.635961+00:00",
       "disappeared_at": "2026-05-17T14:45:47.635961+00:00",
       "watch_label": "ホビー",
-      "miss_count": 1
+      "miss_count": 2
     },
     "hobby:64553": {
       "category": "hobby",
@@ -36,8 +36,8 @@
       "price": 1030,
       "title": "みんなで楽しもう！ マリオテニスフィーバー",
       "first_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_seen": "2026-05-17T14:45:47.635961+00:00",
-      "last_remaining": 23,
+      "last_seen": "2026-05-17T15:45:34.274920+00:00",
+      "last_remaining": 18,
       "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": "2026-05-17T12:36:22.098279+00:00",
@@ -51,7 +51,7 @@
       "price": 1020,
       "title": "遥かなる旅路　ゼルダの伝説ティアーズオブザキングダム",
       "first_seen": "2026-05-17T12:31:15.777171+00:00",
-      "last_seen": "2026-05-17T14:45:47.635961+00:00",
+      "last_seen": "2026-05-17T15:45:34.274920+00:00",
       "last_remaining": 37,
       "last_total": 100,
       "is_sold_out": false,
@@ -66,16 +66,31 @@
       "price": 1040,
       "title": "一緒に暮らそう！ ぽこあポケモン",
       "first_seen": "2026-05-17T14:45:47.635961+00:00",
-      "last_seen": "2026-05-17T14:45:47.635961+00:00",
-      "last_remaining": 89,
+      "last_seen": "2026-05-17T15:45:34.274920+00:00",
+      "last_remaining": 35,
       "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
       "disappeared_at": null,
       "miss_count": 0,
       "watch_label": "ホビー"
+    },
+    "onepiece:64653": {
+      "category": "onepiece",
+      "id": "64653",
+      "price": 933,
+      "title": "1/10プレミアムカードコレクション　ベストセレクション vol.4",
+      "first_seen": "2026-05-17T15:45:34.274920+00:00",
+      "last_seen": "2026-05-17T15:45:34.274920+00:00",
+      "last_remaining": 68,
+      "last_total": 100,
+      "is_sold_out": false,
+      "sold_out_at": null,
+      "disappeared_at": null,
+      "miss_count": 0,
+      "watch_label": "ワンピース"
     }
   },
   "first_run": false,
-  "last_check": "2026-05-17T14:45:47.635961+00:00"
+  "last_check": "2026-05-17T15:45:34.274920+00:00"
 }
