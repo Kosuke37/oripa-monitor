@@ -106,7 +106,7 @@ def fetch_html(url: str) -> str:
             viewport={"width": 1280, "height": 900},
         )
         page = ctx.new_page()
-        page.goto(url, wait_until="networkidle", timeout=60_000)
+        page.goto(url, wait_until="domcontentloaded", timeout=30_000)
         page.wait_for_timeout(3000)
         html = page.content()
         browser.close()
