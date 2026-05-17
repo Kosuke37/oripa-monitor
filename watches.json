@@ -1,0 +1,24 @@
+{
+  "_comment": "監視対象の設定。このファイルをGitHubのWeb UIで編集してcommitすれば、5分後の次回ランから自動反映されます。Pythonもgitも触る必要なし。",
+
+  "watches": [
+    {
+      "label": "ワンピース",
+      "url": "https://japan-toreca.com/oripa/onepiece",
+      "prices": [933]
+    },
+    {
+      "label": "ホビー",
+      "url": "https://japan-toreca.com/oripa/hobby",
+      "prices": [1020, 1030, 1040]
+    }
+  ],
+
+  "options": {
+    "_comment_notify_on_new": "新規出品で通知するか(falseにすれば売り切れ通知のみ)",
+    "notify_on_new": true,
+
+    "_comment_stale_days": "消えてから何日経ったエントリを削除するか",
+    "stale_days": 14
+  }
+}
