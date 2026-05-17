@@ -16,7 +16,7 @@
 
   "options": {
     "_comment_notify_on_new": "新規出品で通知するか(falseにすれば売り切れ通知のみ)",
-    "notify_on_new": true,
+    "notify_on_new": false,
 
     "_comment_stale_days": "消えてから何日経ったエントリを削除するか",
     "stale_days": 14
