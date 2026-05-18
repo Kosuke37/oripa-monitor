@@ -13,7 +13,7 @@
       "sold_out_at": "2026-05-17T15:45:34.274920+00:00",
       "disappeared_at": "2026-05-17T15:45:34.274920+00:00",
       "watch_label": "ワンピース",
-      "miss_count": 6
+      "miss_count": 7
     },
     "hobby:64556": {
       "category": "hobby",
@@ -28,7 +28,7 @@
       "sold_out_at": "2026-05-17T14:45:47.635961+00:00",
       "disappeared_at": "2026-05-17T14:45:47.635961+00:00",
       "watch_label": "ホビー",
-      "miss_count": 7
+      "miss_count": 8
     },
     "hobby:64553": {
       "category": "hobby",
@@ -43,7 +43,7 @@
       "sold_out_at": "2026-05-17T16:40:40.329974+00:00",
       "disappeared_at": "2026-05-17T16:40:40.329974+00:00",
       "watch_label": "ホビー",
-      "miss_count": 4
+      "miss_count": 5
     },
     "hobby:64524": {
       "category": "hobby",
@@ -58,7 +58,7 @@
       "sold_out_at": "2026-05-17T22:57:43.334570+00:00",
       "disappeared_at": "2026-05-17T22:57:43.334570+00:00",
       "watch_label": "ホビー",
-      "miss_count": 1
+      "miss_count": 2
     },
     "hobby:64619": {
       "category": "hobby",
@@ -72,7 +72,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-17T17:42:44.860398+00:00",
       "disappeared_at": "2026-05-17T17:42:44.860398+00:00",
-      "miss_count": 3,
+      "miss_count": 4,
       "watch_label": "ホビー"
     },
     "onepiece:64653": {
@@ -87,7 +87,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-17T16:40:40.329974+00:00",
       "disappeared_at": "2026-05-17T16:40:40.329974+00:00",
-      "miss_count": 4,
+      "miss_count": 5,
       "watch_label": "ワンピース"
     },
     "onepiece:64691": {
@@ -102,7 +102,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-17T17:42:44.860398+00:00",
       "disappeared_at": "2026-05-17T17:42:44.860398+00:00",
-      "miss_count": 3,
+      "miss_count": 4,
       "watch_label": "ワンピース"
     },
     "hobby:64700": {
@@ -111,8 +111,8 @@
       "price": 1040,
       "title": "一緒に暮らそう！ ぽこあポケモン",
       "first_seen": "2026-05-17T17:42:44.860398+00:00",
-      "last_seen": "2026-05-17T22:57:43.334570+00:00",
-      "last_remaining": 29,
+      "last_seen": "2026-05-18T00:03:28.913294+00:00",
+      "last_remaining": 28,
       "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
@@ -126,8 +126,8 @@
       "price": 1030,
       "title": "みんなで楽しもう！ マリオテニスフィーバー",
       "first_seen": "2026-05-17T17:42:44.860398+00:00",
-      "last_seen": "2026-05-17T22:57:43.334570+00:00",
-      "last_remaining": 55,
+      "last_seen": "2026-05-18T00:03:28.913294+00:00",
+      "last_remaining": 46,
       "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
@@ -141,8 +141,8 @@
       "price": 933,
       "title": "1/10プレミアムカードコレクション　ベストセレクション vol.4",
       "first_seen": "2026-05-17T18:34:05.229626+00:00",
-      "last_seen": "2026-05-17T22:57:43.334570+00:00",
-      "last_remaining": 40,
+      "last_seen": "2026-05-18T00:03:28.913294+00:00",
+      "last_remaining": 20,
       "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
@@ -159,6 +159,21 @@
       "last_seen": "2026-05-17T22:57:43.334570+00:00",
       "last_remaining": 1,
       "last_total": 100,
+      "is_sold_out": true,
+      "sold_out_at": "2026-05-18T00:03:28.913294+00:00",
+      "disappeared_at": "2026-05-18T00:03:28.913294+00:00",
+      "miss_count": 1,
+      "watch_label": "ホビー"
+    },
+    "hobby:64741": {
+      "category": "hobby",
+      "id": "64741",
+      "price": 1020,
+      "title": "遥かなる旅路　ゼルダの伝説ティアーズオブザキングダム",
+      "first_seen": "2026-05-18T00:03:28.913294+00:00",
+      "last_seen": "2026-05-18T00:03:28.913294+00:00",
+      "last_remaining": 74,
+      "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
       "disappeared_at": null,
@@ -167,5 +182,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-05-17T22:57:43.334570+00:00"
+  "last_check": "2026-05-18T00:03:28.913294+00:00"
 }
