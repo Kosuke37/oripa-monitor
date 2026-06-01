@@ -1,20 +1,5 @@
 {
   "tracked_gachas": {
-    "hobby:64695": {
-      "category": "hobby",
-      "id": "64695",
-      "price": 1030,
-      "title": "みんなで楽しもう！ マリオテニスフィーバー",
-      "first_seen": "2026-05-17T17:42:44.860398+00:00",
-      "last_seen": "2026-05-18T04:40:05.086798+00:00",
-      "last_remaining": 24,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-05-18T08:36:43.439110+00:00",
-      "disappeared_at": "2026-05-18T08:36:43.439110+00:00",
-      "miss_count": 46,
-      "watch_label": "ホビー"
-    },
     "hobby:64741": {
       "category": "hobby",
       "id": "64741",
@@ -29,21 +14,6 @@
       "disappeared_at": "2026-05-18T15:56:19.246029+00:00",
       "miss_count": 44,
       "watch_label": "ホビー"
-    },
-    "onepiece:64851": {
-      "category": "onepiece",
-      "id": "64851",
-      "price": 933,
-      "title": "1/10プレミアムカードコレクション　ベストセレクション vol.4",
-      "first_seen": "2026-05-18T04:40:05.086798+00:00",
-      "last_seen": "2026-05-18T04:40:05.086798+00:00",
-      "last_remaining": 70,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-05-18T08:36:43.439110+00:00",
-      "disappeared_at": "2026-05-18T08:36:43.439110+00:00",
-      "miss_count": 46,
-      "watch_label": "ワンピース"
     },
     "hobby:64753": {
       "category": "hobby",
@@ -87,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-18T15:56:19.246029+00:00",
       "disappeared_at": "2026-05-18T15:56:19.246029+00:00",
-      "miss_count": 44,
+      "miss_count": 45,
       "watch_label": "ワンピース"
     },
     "hobby:65017": {
@@ -117,7 +87,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-18T23:08:43.223530+00:00",
       "disappeared_at": "2026-05-18T23:08:43.223530+00:00",
-      "miss_count": 42,
+      "miss_count": 43,
       "watch_label": "ワンピース"
     },
     "hobby:65145": {
@@ -162,7 +132,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-19T08:06:40.136401+00:00",
       "disappeared_at": "2026-05-19T08:06:40.136401+00:00",
-      "miss_count": 39,
+      "miss_count": 40,
       "watch_label": "ワンピース"
     },
     "onepiece:65406": {
@@ -177,7 +147,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-27T23:33:48.002228+00:00",
       "disappeared_at": "2026-05-27T23:33:48.002228+00:00",
-      "miss_count": 38,
+      "miss_count": 39,
       "watch_label": "ワンピース"
     },
     "hobby:69598": {
@@ -542,5 +512,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-06-01T05:11:12.034027+00:00"
+  "last_check": "2026-06-01T10:31:26.068342+00:00"
 }
