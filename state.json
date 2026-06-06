@@ -42,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-05-27T23:33:48.002228+00:00",
       "disappeared_at": "2026-05-27T23:33:48.002228+00:00",
-      "miss_count": 70,
+      "miss_count": 71,
       "watch_label": "ワンピース"
     },
     "hobby:69598": {
@@ -572,5 +572,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-06-06T07:35:41.663733+00:00"
+  "last_check": "2026-06-06T09:36:27.155308+00:00"
 }
