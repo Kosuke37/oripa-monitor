@@ -1,20 +1,5 @@
 {
   "tracked_gachas": {
-    "hobby:72985": {
-      "category": "hobby",
-      "id": "72985",
-      "price": 1020,
-      "title": "遥かなる旅路　ゼルダの伝説ティアーズオブザキングダム",
-      "first_seen": "2026-06-05T14:11:16.712679+00:00",
-      "last_seen": "2026-06-06T00:17:52.187692+00:00",
-      "last_remaining": 23,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-06-06T04:32:07.431193+00:00",
-      "disappeared_at": "2026-06-06T04:32:07.431193+00:00",
-      "miss_count": 101,
-      "watch_label": "ホビー"
-    },
     "hobby:73114": {
       "category": "hobby",
       "id": "73114",
@@ -467,5 +452,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-06-20T04:15:06.169249+00:00"
+  "last_check": "2026-06-20T07:58:45.735932+00:00"
 }
