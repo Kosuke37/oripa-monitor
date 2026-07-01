@@ -1,20 +1,5 @@
 {
   "tracked_gachas": {
-    "hobby:75913": {
-      "category": "hobby",
-      "id": "75913",
-      "price": 1020,
-      "title": "遥かなる旅路　ゼルダの伝説ティアーズオブザキングダム",
-      "first_seen": "2026-06-16T07:42:50.068448+00:00",
-      "last_seen": "2026-06-16T17:37:04.809659+00:00",
-      "last_remaining": 22,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-06-16T23:22:08.317480+00:00",
-      "disappeared_at": "2026-06-16T23:22:08.317480+00:00",
-      "miss_count": 110,
-      "watch_label": "ホビー"
-    },
     "hobby:76139": {
       "category": "hobby",
       "id": "76139",
@@ -27,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-17T06:52:32.502918+00:00",
       "disappeared_at": "2026-06-17T06:52:32.502918+00:00",
-      "miss_count": 108,
+      "miss_count": 109,
       "watch_label": "ホビー"
     },
     "hobby:76285": {
@@ -42,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-17T14:35:02.984081+00:00",
       "disappeared_at": "2026-06-17T14:35:02.984081+00:00",
-      "miss_count": 106,
+      "miss_count": 107,
       "watch_label": "ホビー"
     },
     "hobby:76387": {
@@ -57,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-17T23:21:02.215434+00:00",
       "disappeared_at": "2026-06-17T23:21:02.215434+00:00",
-      "miss_count": 104,
+      "miss_count": 105,
       "watch_label": "ホビー"
     },
     "hobby:76529": {
@@ -72,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-18T01:45:48.567863+00:00",
       "disappeared_at": "2026-06-18T01:45:48.567863+00:00",
-      "miss_count": 103,
+      "miss_count": 104,
       "watch_label": "ホビー"
     },
     "hobby:76542": {
@@ -87,7 +72,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-18T10:56:41.937335+00:00",
       "disappeared_at": "2026-06-18T10:56:41.937335+00:00",
-      "miss_count": 101,
+      "miss_count": 102,
       "watch_label": "ホビー"
     },
     "hobby:76741": {
@@ -102,7 +87,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-18T17:26:57.372930+00:00",
       "disappeared_at": "2026-06-18T17:26:57.372930+00:00",
-      "miss_count": 99,
+      "miss_count": 100,
       "watch_label": "ホビー"
     },
     "hobby:76832": {
@@ -117,7 +102,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-19T12:27:47.087241+00:00",
       "disappeared_at": "2026-06-19T12:27:47.087241+00:00",
-      "miss_count": 95,
+      "miss_count": 96,
       "watch_label": "ホビー"
     },
     "hobby:77078": {
@@ -132,7 +117,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-19T22:53:42.403598+00:00",
       "disappeared_at": "2026-06-19T22:53:42.403598+00:00",
-      "miss_count": 92,
+      "miss_count": 93,
       "watch_label": "ホビー"
     },
     "hobby:77318": {
@@ -147,7 +132,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-20T04:15:06.169249+00:00",
       "disappeared_at": "2026-06-20T04:15:06.169249+00:00",
-      "miss_count": 90,
+      "miss_count": 91,
       "watch_label": "ホビー"
     },
     "hobby:77392": {
@@ -162,7 +147,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-20T10:35:20.975122+00:00",
       "disappeared_at": "2026-06-20T10:35:20.975122+00:00",
-      "miss_count": 89,
+      "miss_count": 90,
       "watch_label": "ホビー"
     },
     "hobby:77468": {
@@ -177,7 +162,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-20T16:04:14.845139+00:00",
       "disappeared_at": "2026-06-20T16:04:14.845139+00:00",
-      "miss_count": 86,
+      "miss_count": 87,
       "watch_label": "ホビー"
     },
     "hobby:77623": {
@@ -192,7 +177,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-21T11:51:22.526705+00:00",
       "disappeared_at": "2026-06-21T11:51:22.526705+00:00",
-      "miss_count": 80,
+      "miss_count": 81,
       "watch_label": "ホビー"
     },
     "hobby:77771": {
@@ -207,7 +192,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-22T05:36:11.278337+00:00",
       "disappeared_at": "2026-06-22T05:36:11.278337+00:00",
-      "miss_count": 74,
+      "miss_count": 75,
       "watch_label": "ホビー"
     },
     "hobby:77940": {
@@ -222,10 +207,10 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-23T08:45:58.553483+00:00",
       "disappeared_at": "2026-06-23T08:45:58.553483+00:00",
-      "miss_count": 67,
+      "miss_count": 68,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-06-30T23:08:27.318689+00:00"
+  "last_check": "2026-07-01T00:19:15.243054+00:00"
 }
