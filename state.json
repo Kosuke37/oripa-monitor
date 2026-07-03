@@ -1,20 +1,5 @@
 {
   "tracked_gachas": {
-    "hobby:77078": {
-      "category": "hobby",
-      "id": "77078",
-      "price": 1020,
-      "title": "遥かなる旅路　ゼルダの伝説ティアーズオブザキングダム",
-      "first_seen": "2026-06-19T12:27:47.087241+00:00",
-      "last_seen": "2026-06-19T17:44:51.743899+00:00",
-      "last_remaining": 40,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-06-19T22:53:42.403598+00:00",
-      "disappeared_at": "2026-06-19T22:53:42.403598+00:00",
-      "miss_count": 117,
-      "watch_label": "ホビー"
-    },
     "hobby:77318": {
       "category": "hobby",
       "id": "77318",
@@ -27,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-20T04:15:06.169249+00:00",
       "disappeared_at": "2026-06-20T04:15:06.169249+00:00",
-      "miss_count": 115,
+      "miss_count": 116,
       "watch_label": "ホビー"
     },
     "hobby:77392": {
@@ -42,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-20T10:35:20.975122+00:00",
       "disappeared_at": "2026-06-20T10:35:20.975122+00:00",
-      "miss_count": 114,
+      "miss_count": 115,
       "watch_label": "ホビー"
     },
     "hobby:77468": {
@@ -57,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-20T16:04:14.845139+00:00",
       "disappeared_at": "2026-06-20T16:04:14.845139+00:00",
-      "miss_count": 111,
+      "miss_count": 112,
       "watch_label": "ホビー"
     },
     "hobby:77623": {
@@ -72,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-21T11:51:22.526705+00:00",
       "disappeared_at": "2026-06-21T11:51:22.526705+00:00",
-      "miss_count": 105,
+      "miss_count": 106,
       "watch_label": "ホビー"
     },
     "hobby:77771": {
@@ -87,7 +72,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-22T05:36:11.278337+00:00",
       "disappeared_at": "2026-06-22T05:36:11.278337+00:00",
-      "miss_count": 99,
+      "miss_count": 100,
       "watch_label": "ホビー"
     },
     "hobby:77940": {
@@ -102,10 +87,10 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-23T08:45:58.553483+00:00",
       "disappeared_at": "2026-06-23T08:45:58.553483+00:00",
-      "miss_count": 92,
+      "miss_count": 93,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-07-03T17:45:53.765655+00:00"
+  "last_check": "2026-07-03T22:58:57.060976+00:00"
 }
