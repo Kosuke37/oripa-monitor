@@ -12,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-22T05:36:11.278337+00:00",
       "disappeared_at": "2026-06-22T05:36:11.278337+00:00",
-      "miss_count": 119,
+      "miss_count": 120,
       "watch_label": "ホビー"
     },
     "hobby:77940": {
@@ -27,10 +27,10 @@
       "is_sold_out": true,
       "sold_out_at": "2026-06-23T08:45:58.553483+00:00",
       "disappeared_at": "2026-06-23T08:45:58.553483+00:00",
-      "miss_count": 112,
+      "miss_count": 113,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-07-05T15:40:48.857488+00:00"
+  "last_check": "2026-07-05T16:43:03.593680+00:00"
 }
