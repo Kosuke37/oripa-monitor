@@ -1,5 +1,21 @@
 {
-  "tracked_gachas": {},
+  "tracked_gachas": {
+    "hobby:138921": {
+      "category": "hobby",
+      "id": "138921",
+      "price": 1030,
+      "title": "FANCY♡LOVELY♡Mellojoy LAND!!",
+      "first_seen": "2026-10-05T14:07:42.563550+00:00",
+      "last_seen": "2026-10-05T14:07:42.563550+00:00",
+      "last_remaining": 2592,
+      "last_total": 3640,
+      "is_sold_out": false,
+      "sold_out_at": null,
+      "disappeared_at": null,
+      "miss_count": 0,
+      "watch_label": "ホビー"
+    }
+  },
   "first_run": false,
-  "last_check": "2026-10-05T05:59:15.614221+00:00"
+  "last_check": "2026-10-05T14:07:42.563550+00:00"
 }
