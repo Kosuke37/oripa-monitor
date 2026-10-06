@@ -6,9 +6,24 @@
       "price": 1030,
       "title": "FANCY♡LOVELY♡Mellojoy LAND!!",
       "first_seen": "2026-10-05T14:07:42.563550+00:00",
-      "last_seen": "2026-10-06T02:02:16.410157+00:00",
-      "last_remaining": 1960,
+      "last_seen": "2026-10-06T08:53:52.497439+00:00",
+      "last_remaining": 1122,
       "last_total": 3640,
+      "is_sold_out": false,
+      "sold_out_at": null,
+      "disappeared_at": null,
+      "miss_count": 0,
+      "watch_label": "ホビー"
+    },
+    "hobby:138897": {
+      "category": "hobby",
+      "id": "138897",
+      "price": 1040,
+      "title": "戦え！！STREET FIGHTER 6 YEARS 1-2 ファイターズエディション",
+      "first_seen": "2026-10-06T08:53:52.497439+00:00",
+      "last_seen": "2026-10-06T08:53:52.497439+00:00",
+      "last_remaining": 19,
+      "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
       "disappeared_at": null,
@@ -17,5 +32,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-10-06T02:02:16.410157+00:00"
+  "last_check": "2026-10-06T08:53:52.497439+00:00"
 }
