@@ -6,8 +6,8 @@
       "price": 1030,
       "title": "FANCY♡LOVELY♡Mellojoy LAND!!",
       "first_seen": "2026-10-05T14:07:42.563550+00:00",
-      "last_seen": "2026-10-05T21:32:51.468227+00:00",
-      "last_remaining": 2152,
+      "last_seen": "2026-10-06T02:02:16.410157+00:00",
+      "last_remaining": 1960,
       "last_total": 3640,
       "is_sold_out": false,
       "sold_out_at": null,
@@ -17,5 +17,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-10-05T21:32:51.468227+00:00"
+  "last_check": "2026-10-06T02:02:16.410157+00:00"
 }
