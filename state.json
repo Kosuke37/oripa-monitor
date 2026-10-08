@@ -12,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-06T15:32:54.526636+00:00",
       "disappeared_at": "2026-10-06T15:32:54.526636+00:00",
-      "miss_count": 6,
+      "miss_count": 7,
       "watch_label": "ホビー"
     },
     "hobby:138897": {
@@ -27,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-06T15:32:54.526636+00:00",
       "disappeared_at": "2026-10-06T15:32:54.526636+00:00",
-      "miss_count": 6,
+      "miss_count": 7,
       "watch_label": "ホビー"
     },
     "hobby:139279": {
@@ -36,8 +36,8 @@
       "price": 1030,
       "title": "FANCY♡LOVELY♡Mellojoy LAND!!",
       "first_seen": "2026-10-06T15:32:54.526636+00:00",
-      "last_seen": "2026-10-07T20:06:20.236183+00:00",
-      "last_remaining": 1112,
+      "last_seen": "2026-10-08T01:32:10.590301+00:00",
+      "last_remaining": 1037,
       "last_total": 3640,
       "is_sold_out": false,
       "sold_out_at": null,
@@ -57,10 +57,10 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-07T20:06:20.236183+00:00",
       "disappeared_at": "2026-10-07T20:06:20.236183+00:00",
-      "miss_count": 1,
+      "miss_count": 2,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-10-07T20:06:20.236183+00:00"
+  "last_check": "2026-10-08T01:32:10.590301+00:00"
 }
