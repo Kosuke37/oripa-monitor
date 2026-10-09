@@ -12,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-06T15:32:54.526636+00:00",
       "disappeared_at": "2026-10-06T15:32:54.526636+00:00",
-      "miss_count": 10,
+      "miss_count": 11,
       "watch_label": "ホビー"
     },
     "hobby:138897": {
@@ -27,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-06T15:32:54.526636+00:00",
       "disappeared_at": "2026-10-06T15:32:54.526636+00:00",
-      "miss_count": 10,
+      "miss_count": 11,
       "watch_label": "ホビー"
     },
     "hobby:139279": {
@@ -42,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-08T07:57:34.485599+00:00",
       "disappeared_at": "2026-10-08T07:57:34.485599+00:00",
-      "miss_count": 3,
+      "miss_count": 4,
       "watch_label": "ホビー"
     },
     "hobby:139325": {
@@ -57,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-07T20:06:20.236183+00:00",
       "disappeared_at": "2026-10-07T20:06:20.236183+00:00",
-      "miss_count": 5,
+      "miss_count": 6,
       "watch_label": "ホビー"
     },
     "hobby:139969": {
@@ -66,9 +66,24 @@
       "price": 1030,
       "title": "FANCY♡LOVELY♡Mellojoy LAND!!",
       "first_seen": "2026-10-08T07:57:34.485599+00:00",
-      "last_seen": "2026-10-09T01:42:42.194904+00:00",
-      "last_remaining": 2763,
+      "last_seen": "2026-10-09T08:00:44.918631+00:00",
+      "last_remaining": 2347,
       "last_total": 3640,
+      "is_sold_out": false,
+      "sold_out_at": null,
+      "disappeared_at": null,
+      "miss_count": 0,
+      "watch_label": "ホビー"
+    },
+    "hobby:139800": {
+      "category": "hobby",
+      "id": "139800",
+      "price": 1040,
+      "title": "戦え！！STREET FIGHTER 6 YEARS 1-2 ファイターズエディション",
+      "first_seen": "2026-10-09T08:00:44.918631+00:00",
+      "last_seen": "2026-10-09T08:00:44.918631+00:00",
+      "last_remaining": 31,
+      "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
       "disappeared_at": null,
@@ -77,5 +92,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-10-09T01:42:42.194904+00:00"
+  "last_check": "2026-10-09T08:00:44.918631+00:00"
 }
