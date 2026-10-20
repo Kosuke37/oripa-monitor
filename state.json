@@ -1,35 +1,5 @@
 {
   "tracked_gachas": {
-    "hobby:138921": {
-      "category": "hobby",
-      "id": "138921",
-      "price": 1030,
-      "title": "FANCY♡LOVELY♡Mellojoy LAND!!",
-      "first_seen": "2026-10-05T14:07:42.563550+00:00",
-      "last_seen": "2026-10-06T08:53:52.497439+00:00",
-      "last_remaining": 1122,
-      "last_total": 3640,
-      "is_sold_out": true,
-      "sold_out_at": "2026-10-06T15:32:54.526636+00:00",
-      "disappeared_at": "2026-10-06T15:32:54.526636+00:00",
-      "miss_count": 62,
-      "watch_label": "ホビー"
-    },
-    "hobby:138897": {
-      "category": "hobby",
-      "id": "138897",
-      "price": 1040,
-      "title": "戦え！！STREET FIGHTER 6 YEARS 1-2 ファイターズエディション",
-      "first_seen": "2026-10-06T08:53:52.497439+00:00",
-      "last_seen": "2026-10-06T08:53:52.497439+00:00",
-      "last_remaining": 19,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-10-06T15:32:54.526636+00:00",
-      "disappeared_at": "2026-10-06T15:32:54.526636+00:00",
-      "miss_count": 62,
-      "watch_label": "ホビー"
-    },
     "hobby:139279": {
       "category": "hobby",
       "id": "139279",
@@ -42,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-08T07:57:34.485599+00:00",
       "disappeared_at": "2026-10-08T07:57:34.485599+00:00",
-      "miss_count": 55,
+      "miss_count": 56,
       "watch_label": "ホビー"
     },
     "hobby:139325": {
@@ -57,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-07T20:06:20.236183+00:00",
       "disappeared_at": "2026-10-07T20:06:20.236183+00:00",
-      "miss_count": 57,
+      "miss_count": 58,
       "watch_label": "ホビー"
     },
     "hobby:139969": {
@@ -72,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-11T18:05:03.607607+00:00",
       "disappeared_at": "2026-10-11T18:05:03.607607+00:00",
-      "miss_count": 43,
+      "miss_count": 44,
       "watch_label": "ホビー"
     },
     "hobby:139800": {
@@ -87,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-09T15:12:15.762806+00:00",
       "disappeared_at": "2026-10-09T15:12:15.762806+00:00",
-      "miss_count": 51,
+      "miss_count": 52,
       "watch_label": "ホビー"
     },
     "hobby:143028": {
@@ -102,7 +72,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-17T08:39:35.948894+00:00",
       "disappeared_at": "2026-10-17T08:39:35.948894+00:00",
-      "miss_count": 18,
+      "miss_count": 19,
       "watch_label": "ホビー"
     },
     "hobby:143755": {
@@ -117,7 +87,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-19T14:58:44.592257+00:00",
       "disappeared_at": "2026-10-19T14:58:44.592257+00:00",
-      "miss_count": 5,
+      "miss_count": 6,
       "watch_label": "ホビー"
     },
     "hobby:144020": {
@@ -126,8 +96,8 @@
       "price": 1040,
       "title": "戦え！！STREET FIGHTER 6 YEARS 1-2 ファイターズエディション",
       "first_seen": "2026-10-20T10:19:17.794790+00:00",
-      "last_seen": "2026-10-20T15:12:01.827678+00:00",
-      "last_remaining": 55,
+      "last_seen": "2026-10-20T19:16:00.285102+00:00",
+      "last_remaining": 45,
       "last_total": 100,
       "is_sold_out": false,
       "sold_out_at": null,
@@ -137,5 +107,5 @@
     }
   },
   "first_run": false,
-  "last_check": "2026-10-20T15:12:01.827678+00:00"
+  "last_check": "2026-10-20T19:16:00.285102+00:00"
 }
