@@ -12,22 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-08T07:57:34.485599+00:00",
       "disappeared_at": "2026-10-08T07:57:34.485599+00:00",
-      "miss_count": 61,
-      "watch_label": "ホビー"
-    },
-    "hobby:139325": {
-      "category": "hobby",
-      "id": "139325",
-      "price": 1040,
-      "title": "戦え！！STREET FIGHTER 6 YEARS 1-2 ファイターズエディション",
-      "first_seen": "2026-10-06T20:31:42.267836+00:00",
-      "last_seen": "2026-10-07T14:30:53.117291+00:00",
-      "last_remaining": 18,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-10-07T20:06:20.236183+00:00",
-      "disappeared_at": "2026-10-07T20:06:20.236183+00:00",
-      "miss_count": 63,
+      "miss_count": 62,
       "watch_label": "ホビー"
     },
     "hobby:139969": {
@@ -42,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-11T18:05:03.607607+00:00",
       "disappeared_at": "2026-10-11T18:05:03.607607+00:00",
-      "miss_count": 49,
+      "miss_count": 50,
       "watch_label": "ホビー"
     },
     "hobby:139800": {
@@ -57,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-09T15:12:15.762806+00:00",
       "disappeared_at": "2026-10-09T15:12:15.762806+00:00",
-      "miss_count": 57,
+      "miss_count": 58,
       "watch_label": "ホビー"
     },
     "hobby:143028": {
@@ -72,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-17T08:39:35.948894+00:00",
       "disappeared_at": "2026-10-17T08:39:35.948894+00:00",
-      "miss_count": 24,
+      "miss_count": 25,
       "watch_label": "ホビー"
     },
     "hobby:143755": {
@@ -87,7 +72,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-19T14:58:44.592257+00:00",
       "disappeared_at": "2026-10-19T14:58:44.592257+00:00",
-      "miss_count": 11,
+      "miss_count": 12,
       "watch_label": "ホビー"
     },
     "hobby:144020": {
@@ -102,10 +87,10 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-21T05:01:22.953525+00:00",
       "disappeared_at": "2026-10-21T05:01:22.953525+00:00",
-      "miss_count": 4,
+      "miss_count": 5,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-10-21T19:16:48.409368+00:00"
+  "last_check": "2026-10-22T00:24:23.760474+00:00"
 }
