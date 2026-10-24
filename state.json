@@ -12,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-11T18:05:03.607607+00:00",
       "disappeared_at": "2026-10-11T18:05:03.607607+00:00",
-      "miss_count": 59,
+      "miss_count": 60,
       "watch_label": "ホビー"
     },
     "hobby:143028": {
@@ -27,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-17T08:39:35.948894+00:00",
       "disappeared_at": "2026-10-17T08:39:35.948894+00:00",
-      "miss_count": 34,
+      "miss_count": 35,
       "watch_label": "ホビー"
     },
     "hobby:143755": {
@@ -42,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-19T14:58:44.592257+00:00",
       "disappeared_at": "2026-10-19T14:58:44.592257+00:00",
-      "miss_count": 21,
+      "miss_count": 22,
       "watch_label": "ホビー"
     },
     "hobby:144020": {
@@ -57,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-21T05:01:22.953525+00:00",
       "disappeared_at": "2026-10-21T05:01:22.953525+00:00",
-      "miss_count": 14,
+      "miss_count": 15,
       "watch_label": "ホビー"
     },
     "hobby:144890": {
@@ -72,10 +72,10 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-22T15:10:13.351095+00:00",
       "disappeared_at": "2026-10-22T15:10:13.351095+00:00",
-      "miss_count": 7,
+      "miss_count": 8,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-10-23T18:44:42.513579+00:00"
+  "last_check": "2026-10-24T00:14:00.287357+00:00"
 }
