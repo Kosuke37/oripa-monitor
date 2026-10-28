@@ -12,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-17T08:39:35.948894+00:00",
       "disappeared_at": "2026-10-17T08:39:35.948894+00:00",
-      "miss_count": 55,
+      "miss_count": 56,
       "watch_label": "ホビー"
     },
     "hobby:143755": {
@@ -27,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-19T14:58:44.592257+00:00",
       "disappeared_at": "2026-10-19T14:58:44.592257+00:00",
-      "miss_count": 42,
+      "miss_count": 43,
       "watch_label": "ホビー"
     },
     "hobby:144020": {
@@ -42,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-21T05:01:22.953525+00:00",
       "disappeared_at": "2026-10-21T05:01:22.953525+00:00",
-      "miss_count": 35,
+      "miss_count": 36,
       "watch_label": "ホビー"
     },
     "hobby:144890": {
@@ -57,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-22T15:10:13.351095+00:00",
       "disappeared_at": "2026-10-22T15:10:13.351095+00:00",
-      "miss_count": 28,
+      "miss_count": 29,
       "watch_label": "ホビー"
     },
     "hobby:145793": {
@@ -72,7 +72,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-24T13:16:24.198952+00:00",
       "disappeared_at": "2026-10-24T13:16:24.198952+00:00",
-      "miss_count": 19,
+      "miss_count": 20,
       "watch_label": "ホビー"
     },
     "hobby:146015": {
@@ -87,7 +87,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-25T13:22:11.255674+00:00",
       "disappeared_at": "2026-10-25T13:22:11.255674+00:00",
-      "miss_count": 13,
+      "miss_count": 14,
       "watch_label": "ホビー"
     },
     "hobby:146454": {
@@ -102,10 +102,25 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-27T17:58:59.380232+00:00",
       "disappeared_at": "2026-10-27T17:58:59.380232+00:00",
-      "miss_count": 4,
+      "miss_count": 5,
+      "watch_label": "ホビー"
+    },
+    "hobby:147567": {
+      "category": "hobby",
+      "id": "147567",
+      "price": 1040,
+      "title": "戦え！！STREET FIGHTER 6 YEARS 1-2 ファイターズエディション",
+      "first_seen": "2026-10-28T19:01:46.115890+00:00",
+      "last_seen": "2026-10-28T19:01:46.115890+00:00",
+      "last_remaining": 24,
+      "last_total": 100,
+      "is_sold_out": false,
+      "sold_out_at": null,
+      "disappeared_at": null,
+      "miss_count": 0,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-10-28T13:30:34.934749+00:00"
+  "last_check": "2026-10-28T19:01:46.115890+00:00"
 }
