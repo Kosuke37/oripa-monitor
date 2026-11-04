@@ -1,20 +1,5 @@
 {
   "tracked_gachas": {
-    "hobby:144020": {
-      "category": "hobby",
-      "id": "144020",
-      "price": 1040,
-      "title": "戦え！！STREET FIGHTER 6 YEARS 1-2 ファイターズエディション",
-      "first_seen": "2026-10-20T10:19:17.794790+00:00",
-      "last_seen": "2026-10-21T00:21:32.344603+00:00",
-      "last_remaining": 27,
-      "last_total": 100,
-      "is_sold_out": true,
-      "sold_out_at": "2026-10-21T05:01:22.953525+00:00",
-      "disappeared_at": "2026-10-21T05:01:22.953525+00:00",
-      "miss_count": 59,
-      "watch_label": "ホビー"
-    },
     "hobby:144890": {
       "category": "hobby",
       "id": "144890",
@@ -27,7 +12,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-22T15:10:13.351095+00:00",
       "disappeared_at": "2026-10-22T15:10:13.351095+00:00",
-      "miss_count": 52,
+      "miss_count": 53,
       "watch_label": "ホビー"
     },
     "hobby:145793": {
@@ -42,7 +27,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-24T13:16:24.198952+00:00",
       "disappeared_at": "2026-10-24T13:16:24.198952+00:00",
-      "miss_count": 43,
+      "miss_count": 44,
       "watch_label": "ホビー"
     },
     "hobby:146015": {
@@ -57,7 +42,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-25T13:22:11.255674+00:00",
       "disappeared_at": "2026-10-25T13:22:11.255674+00:00",
-      "miss_count": 37,
+      "miss_count": 38,
       "watch_label": "ホビー"
     },
     "hobby:146454": {
@@ -72,7 +57,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-27T17:58:59.380232+00:00",
       "disappeared_at": "2026-10-27T17:58:59.380232+00:00",
-      "miss_count": 28,
+      "miss_count": 29,
       "watch_label": "ホビー"
     },
     "hobby:147567": {
@@ -87,7 +72,7 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-29T01:29:48.059893+00:00",
       "disappeared_at": "2026-10-29T01:29:48.059893+00:00",
-      "miss_count": 23,
+      "miss_count": 24,
       "watch_label": "ホビー"
     },
     "hobby:147924": {
@@ -102,10 +87,10 @@
       "is_sold_out": true,
       "sold_out_at": "2026-10-29T19:49:25.317590+00:00",
       "disappeared_at": "2026-10-29T19:49:25.317590+00:00",
-      "miss_count": 20,
+      "miss_count": 21,
       "watch_label": "ホビー"
     }
   },
   "first_run": false,
-  "last_check": "2026-11-04T01:52:01.983455+00:00"
+  "last_check": "2026-11-04T08:10:02.526435+00:00"
 }
